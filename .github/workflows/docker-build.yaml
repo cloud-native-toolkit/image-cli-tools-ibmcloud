@@ -125,6 +125,7 @@ jobs:
       - name: Build and push ${{ matrix.base }}:${{ matrix.terraform }}
         uses: docker/build-push-action@v3
         with:
+          file: Containerfile
           context: .
           build-args: |
             TERRAFORM_VERSION=${{ matrix.terraform }}
