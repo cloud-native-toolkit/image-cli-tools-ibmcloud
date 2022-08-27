@@ -86,4 +86,3 @@ The base OS can be changed by passing the `BASE_OS` as a build arg. Only `alpine
 ```shell
 docker build --build-arg BASE_OS=fedora -t cli-tools-ibmcloud:fedora .
 ```
-
